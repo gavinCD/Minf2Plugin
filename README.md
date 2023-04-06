@@ -33,3 +33,10 @@ To open the plugin on a given site, navigate to the desired site and click on th
 
 ![image](https://user-images.githubusercontent.com/61881348/230259955-b757ad3d-31e1-4b4f-840c-8e87b3da644b.png)
 
+# Uninstalling
+
+Uninstall the plugin by navigating to the extension screen as above and clicking the remove button
+
+![image](https://user-images.githubusercontent.com/61881348/230260710-bf54a601-88e3-41c1-9660-651e8139e784.png)
+
+Completely remove the plugin by deleting the folder containing the downloaded code
