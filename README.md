@@ -15,8 +15,21 @@ Next navigate to: chrome://extensions
 
 ![image](https://user-images.githubusercontent.com/61881348/230255828-9a6a2c07-a6a0-4735-9bed-de9330af04e9.png)
 
+Activate developer mode by clicking the following button
+
+![image](https://user-images.githubusercontent.com/61881348/230260364-e30b5d7b-d05c-4819-a7bd-1eab7bdbe215.png)
+
 Now select the "Load Unpacked" option on screen. This will open a file browser. Select the folder containing the code you downloaded earlier.
 
 ![image](https://user-images.githubusercontent.com/61881348/230256389-e814642d-2fdf-4e2e-82c7-22448246b8c6.png)
 
 ![image](https://user-images.githubusercontent.com/61881348/230259386-4dbaeea7-2927-40bb-9a61-6c25d3918e68.png)
+
+After selecting this, the plugin should appear in your brower!
+
+![image](https://user-images.githubusercontent.com/61881348/230259613-6b083796-8d4a-4ccf-b945-99cdad089921.png)
+
+To open the plugin on a given site, navigate to the desired site and click on this icon
+
+![image](https://user-images.githubusercontent.com/61881348/230259955-b757ad3d-31e1-4b4f-840c-8e87b3da644b.png)
+
