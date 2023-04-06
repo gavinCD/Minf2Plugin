@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Current Site</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="tab_button_div">
+        <button id="currSiteTabButton" class="tab_button">Overview</button>
+        <button id="moreInfoTabButton" class="tab_button">Site Settings</button>
+        <button id="settingsTabButton" class="tab_button">Choices</button>
+    </div>
+
+    <div id="currSiteTab" class="current_site tab_content">
+        <h1 id="curr_site">Current Site</h1>
+        <p id="url_subheading"></p>
+        <img id="privacy_shield" />
+        <div class="tab_button_div" id="goodBadSelect">
+            <button id="goodTosdrButton" class="tab_button">good</button>
+            <button id="badTosdrButton" class="tab_button">bad</button>
+        </div>
+        <div id="goodTosdrInfoBoxes" class="infoBoxes">
+        </div>
+        <div id="badTosdrInfoBoxes" class="infoBoxes">
+        </div>
+    </div>
+
+    <div id="moreInfoTab" class="info tab_content">
+        <h1>Site Settings</h1>
+        <div id="siteInfoBoxes" class="infoBoxes">
+        </div>
+    </div>
+
+
+
+    <div id="settingsTab" class="settings tab_content">
+        <div id="settings_list">
+            <h3>show me settings relating to...</h3>
+            <div class="seperationBar"></div>
+            <ul>
+                <li><input type="checkbox" id="cookie_setting">Cookies</li><br />
+                <li><input id="personalisation_setting" type="checkbox">Personalisation</li><br />
+                <li><input id="data_sharing_setting" type="checkbox">Data Sharing</li><br />
+                <li><input id="tracking_setting" type="checkbox">Tracking</li><br />
+                <li><input id="communication_setting" type="checkbox">Communication</li><br />
+                <li><input id="data_visibility_setting" type="checkbox">Data Shown to Others</li><br />
+                <li><input type="checkbox" id="history_setting">History</li><br />
+                <li><input type="checkbox" id="optOut_setting">Opt Out</li><br />
+            </ul>
+        </div>
+
+
+        
+        <div id="setting_description_div"><p id="setting_description"></p></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

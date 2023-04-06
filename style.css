@@ -1,0 +1,240 @@
+.tab_content {
+  display: none;
+  width: 250px;
+  max-height: 300px;
+  margin: auto;
+  padding: 0px;
+  color: #7a7a7a;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.infoBoxes {
+  overflow-x: hidden;
+}
+
+.seperationBar {
+  width: 80%;
+  background-color: #7a7a7a;
+  height: 3px;
+  text-align: center;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.infoCard {
+  text-align: left;
+  margin: auto;
+  padding: 5px;
+}
+
+#privacy_shield{
+  object-fit: cover;
+  width: 80%;
+  height: 100%;
+}
+
+.infoCard.infoCardBad {
+  color: rgb(218, 97, 97);
+}
+
+.infoCard.infoCardGood {
+  color:rgb(74, 188, 59);
+}
+
+
+body {
+  background-color: white;
+  margin-top: 0;
+  margin-left: 0px;
+  border: none;
+  top: 0px;
+  width: 100%;
+}
+
+.tab_button {
+  background-color: #7a7a7a;
+  border: none;
+  text-align: center;
+  width: 33.3%;
+  padding: 5px;
+  top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+
+
+}
+
+#goodBadSelect {
+  background-color: white;
+}
+
+#goodTosdrButton {
+  background-color: green;
+}
+
+#badTosdrButton {
+  background-color: darkred;
+}
+
+.tab_button:hover {
+  background-color: gray;
+  animation: shake2 1s;
+
+}
+
+.tab_button_div {
+  background-color: #7a7a7a;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+
+}
+
+
+img {
+  width: 250px;
+  object-fit: contain;
+}
+
+
+.option {
+  width: 10%;
+  display: inline-block;
+  justify-content: center;
+
+}
+
+
+#settingsTab li {
+  float: left;
+  padding-left: 7px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+#settingsTab ul {
+  margin: 0;
+  list-style: none;
+  float: left;
+  padding-left: 20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  margin-bottom:50px;
+}
+
+#submit_button {
+  margin-top: 20px;
+}
+
+
+#setting_description_dep {
+  display: block;
+  /*position: fixed; /* or "absolute" if you want it to be positioned relative to its parent element */
+  left:50%;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  bottom: 0;
+  position: absolute;
+  white-space: normal;
+}
+
+#setting_description_div{
+  margin-top: 100px;
+}
+#setting_description{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  bottom: 0;
+  margin-top: 10px;
+
+}
+
+#setting_description_div{
+  min-height: 50px;
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake2 {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
