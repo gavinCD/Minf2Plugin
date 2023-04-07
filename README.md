@@ -6,6 +6,11 @@ This plugin presents you with relevant information regarding online privacy for 
 ![image](https://user-images.githubusercontent.com/61881348/230254334-d476e0ee-7770-40a7-abaa-03eda2c1d6bf.png)
 ![image](https://user-images.githubusercontent.com/61881348/230254405-97bd72db-4e40-4367-ab7e-89834b02ca5e.png)
 
+# Study
+If you wish to participate in the usability study, please fill out the following form.
+https://forms.office.com/e/Q0ACv4rXtt
+
+
 # Installation
 
 Start by downloading and unzipping the code in this repo
