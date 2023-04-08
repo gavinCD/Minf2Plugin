@@ -122,7 +122,7 @@ async function displayMoreInfo(){
     let tab = await getCurrentTab();
     let url = tab.url;
     url = url.split("://")[1].split("/")[0];
-    url = remove_subdomains(url);
+    url = remove_subdomains_and_tlds(url);
 
     //Check if info has already been fetched
     let json_data;
@@ -155,9 +155,10 @@ async function displayCurrentURL() {
     url = url.split("://")[1].split("/")[0];
     //this works!!!
     let no_sub_url = remove_subdomains(url);
-    
+    let service_name = remove_subdomains_and_tlds(url);
+
     label.innerHTML = no_sub_url;
-    let img_link = await get_priv_shield(no_sub_url);
+    let img_link = await get_priv_shield(service_name);
     document.getElementById("privacy_shield").src = img_link;
     console.log("set img to", img_link);
 
@@ -273,12 +274,21 @@ function create_tosdr_info_card(good_parent_element, bad_parent_element,json_inf
     }
 
 }
-
-function remove_subdomains(url) {
+function remove_subdomains(url){
     let x = url.split(".");
     let final = []
     for (i = 0; i < x.length; i++) {
         if (!subdomains.includes(x[i])) {
+            final.push(x[i]);
+        }
+    }
+    return final.join(".");
+}
+function remove_subdomains_and_tlds(url) {
+    let x = url.split(".");
+    let final = []
+    for (i = 0; i < x.length; i++) {
+        if (!(subdomains.includes(x[i]) || tlds.includes(x[i]))) {
             final.push(x[i]);
         }
     }
