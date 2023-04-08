@@ -501,7 +501,7 @@ function describeHistory(){
 
 function describeOptOut(){
     let description=document.getElementById("setting_description");
-    description.innerHTML = "Display known opt-out links for a given site. Gathered from Opt-Out Easy, UsablePrivacy.";
+    description.innerHTML = "Display known automatically gathered opt-out links for a given site. Gathered by Opt-Out Easy from UsablePrivacy.";
 }
 
 
@@ -537,7 +537,7 @@ async function getButtonsStateAsString(){
     console.log("JUST PRINTED STATE");
     let ret_str = "";
     if (state[0]){
-        ret_str = ret_str + "cookie,";
+        ret_str = ret_str + "cookies,";
     }
 
     if(state[1]){
