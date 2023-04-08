@@ -471,7 +471,7 @@ function describeDataSharing(){
 
 function describeTracking(){
     let description = document.getElementById("setting_description");
-    description.innerHTML="Methods employed to track and monitor your behaviour and preferences";
+    description.innerHTML="View and choose methods employed to track and monitor your behaviour and preferences";
 }
 
 function describeCommunication(){
