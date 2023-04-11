@@ -159,7 +159,7 @@ async function displayCurrentURL() {
 
     label.innerHTML = no_sub_url;
     let img_link = await get_priv_shield(service_name);
-    document.getElementById("privacy_shield").src = img_link;
+    //document.getElementById("privacy_shield").src = img_link;
     console.log("set img to", img_link);
 
     //get from cache if site hasn't changed
@@ -186,6 +186,7 @@ async function displayCurrentURL() {
     let good_p_element = document.getElementById("goodTosdrInfoBoxes");
     let bad_p_element = document.getElementById("badTosdrInfoBoxes");
     json_data["information"].forEach(element => create_tosdr_info_card(good_p_element,bad_p_element,element));
+    document.getElementById("privacy_shield").src = img_link;
     showGoodTab();
     
 }
